@@ -1,8 +1,16 @@
+// Dependncies
+const UI = require('./ui.js')
+const mustache = require("./mustache.min.js");
+var api = require("./request-api.js");
 
-var template = document.getElementById('template');
-var wrapper = document.createElement("div");
-wrapper.setAttribute('class', 'main');
+// Overwriting the 'api' module with the main function needed from it.
+api = new api.API_Connect({url: 'includes/load_api_data.php'});
 
-document.body.appendChild(wrapper);
+api.request({
+	'site' : 'stackoverflow',
+	'api_dir' : 'questions/featured'
+}, function(result, status) {
+	console.log(result);
+});
 
-wrapper.innerHTML = Mustache.to_html(template.innerHTML, response);
+// UI.wrapper.innerHTML = Mustache.to_html(UI.template.innerHTML, response);
