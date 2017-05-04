@@ -71,5 +71,3 @@ function API_Connect(params) {
 
 	});
 }
-
-module.exports = { API_Connect }
