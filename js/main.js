@@ -5,7 +5,6 @@ var reqParams = {
 	'fromdate' : Math.round((Date.now() - (60 * 60 * 24 * 7)) / 1000)
 }
 
-
 $(function() {
 	
 	const UI = {
@@ -18,7 +17,7 @@ $(function() {
 		sites_list_template : document.getElementById('sites-list-template'),
 
 		// Options Form
-		seite_select : document.getElementById('site-select')
+		site_select : document.getElementById('site-select')
 
 	}
 
@@ -29,11 +28,14 @@ $(function() {
 
 function init(UI) {
 
+	// Material Inits
+	$(UI.site_select).material_select();
+	
 	// Overwriting the 'api' module with the main function needed from it.
 	api = new API_Connect({url: 'includes/load_api_data.php'});
 
+	// load_list_of_sites(UI.site_select, UI.sites_list_template);
 	load_questions(UI.content_wrapper, UI.template);
-	load_list_of_sites(UI.seite_select, UI.sites_list_template);
 
 	function load_questions(wrapper, template) {
 
@@ -41,8 +43,13 @@ function init(UI) {
 			// Converting the String result to a json object
 			result = JSON.parse(result);
 
+			console.log(result);
+
 			wrapper.innerHTML = Mustache.to_html(template.innerHTML, result);
+
+
 		});
+
 	}
 
 	function load_list_of_sites(wrapper, template) {
@@ -53,12 +60,13 @@ function init(UI) {
 			// Converting the String result to a json object
 			result = JSON.parse(result);
 
-			wrapper.innerHTML += Mustache.to_html(template.innerHTML, result);
+			wrapper.innerHTML = Mustache.to_html(template.innerHTML, result);
 
 			console.log(result);
 
-			// Material Inits
-			$(wrapper).material_select();
+			
+
+
 		});
 	}
 }
