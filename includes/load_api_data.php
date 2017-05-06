@@ -8,7 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
 	$dir = $_GET['api_dir'];
 	unset($_GET['api_dir']);
 
-	echo load_stackexchange_api_data($dir, $_GET);
+	echo file_get_contents('../questions.json');
+	// echo load_stackexchange_api_data($dir, $_GET);
 }
 
 

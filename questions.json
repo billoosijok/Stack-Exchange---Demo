@@ -1,0 +1,139 @@
+{
+  "items": [
+    {
+      "tags": [
+        "c#",
+        "database",
+        "model",
+        "entity-framework-6",
+        "compare"
+      ],
+      "owner": {
+        "reputation": 351,
+        "user_id": 986451,
+        "user_type": "registered",
+        "accept_rate": 88,
+        "profile_image": "https://www.gravatar.com/avatar/af23a835ecc5aa8c2c149118680ea5a8?s=128&d=identicon&r=PG",
+        "display_name": "Michael",
+        "link": "http://stackoverflow.com/users/986451/michael"
+      },
+      "is_answered": false,
+      "view_count": 9,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1494028775,
+      "creation_date": 1494028775,
+      "question_id": 43815256,
+      "link": "http://stackoverflow.com/questions/43815256/entity-framework-find-all-differences-between-existing-database-and-code-first",
+      "title": "Entity Framework: Find all differences between existing database and code-first model"
+    },
+    {
+      "tags": [
+        "php",
+        "mysql",
+        "phpmyadmin"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 7828700,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/pS9ux.gif?s=128&g=1",
+        "display_name": "R.Todd",
+        "link": "http://stackoverflow.com/users/7828700/r-todd"
+      },
+      "is_answered": true,
+      "view_count": 16,
+      "closed_date": 1494037848,
+      "answer_count": 2,
+      "score": -1,
+      "last_activity_date": 1494028768,
+      "creation_date": 1494028188,
+      "last_edit_date": 1494028624,
+      "question_id": 43815200,
+      "link": "http://stackoverflow.com/questions/43815200/syntax-error-message-for-mysql",
+      "closed_reason": "duplicate",
+      "title": "Syntax Error Message for mysql"
+    },
+    {
+      "tags": [
+        "c",
+        "segmentation-fault",
+        "tokenize"
+      ],
+      "owner": {
+        "reputation": 11,
+        "user_id": 6131449,
+        "user_type": "registered",
+        "accept_rate": 20,
+        "profile_image": "https://lh4.googleusercontent.com/-A2RRbVYBs6I/AAAAAAAAAAI/AAAAAAAAABM/xg__MMwEOc0/photo.jpg?sz=128",
+        "display_name": "Gerald Lim",
+        "link": "http://stackoverflow.com/users/6131449/gerald-lim"
+      },
+      "is_answered": true,
+      "view_count": 21,
+      "accepted_answer_id": 43814209,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1494028767,
+      "creation_date": 1494020319,
+      "last_edit_date": 1494028767,
+      "question_id": 43814108,
+      "link": "http://stackoverflow.com/questions/43814108/how-to-tokenize-input-for-variable-amount-of-words",
+      "title": "How to tokenize input for variable amount of words"
+    },
+    {
+      "tags": [
+        "arrays",
+        "ruby",
+        "algorithm",
+        "recursion",
+        "multidimensional-array"
+      ],
+      "owner": {
+        "reputation": 28,
+        "user_id": 3786971,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/8b3c8ede828a507d6afb5fa7c8a6743e?s=128&d=identicon&r=PG",
+        "display_name": "marinatedpork",
+        "link": "http://stackoverflow.com/users/3786971/marinatedpork"
+      },
+      "is_answered": true,
+      "view_count": 27,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1494028756,
+      "creation_date": 1494018885,
+      "last_edit_date": 1494028756,
+      "question_id": 43813834,
+      "link": "http://stackoverflow.com/questions/43813834/how-to-recursively-find-permutations-of-two-dimensional-array-in-ruby",
+      "title": "How to recursively find permutations of two dimensional array in Ruby"
+    },
+    {
+      "tags": [
+        "c++",
+        "mongodb"
+      ],
+      "owner": {
+        "reputation": 278,
+        "user_id": 4175247,
+        "user_type": "registered",
+        "accept_rate": 77,
+        "profile_image": "https://www.gravatar.com/avatar/30ed2c84780bfa416342b86463f76871?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Serbin",
+        "link": "http://stackoverflow.com/users/4175247/serbin"
+      },
+      "is_answered": false,
+      "view_count": 31,
+      "answer_count": 2,
+      "score": 0,
+      "last_activity_date": 1494028748,
+      "creation_date": 1493817857,
+      "question_id": 43761382,
+      "link": "http://stackoverflow.com/questions/43761382/cant-connect-to-mongodb-from-the-c-code",
+      "title": "Can&#39;t connect to MongoDB from the C++ code"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 10000,
+  "quota_remaining": 9698
+}

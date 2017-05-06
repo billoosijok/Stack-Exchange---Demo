@@ -16,12 +16,6 @@ function API_Connect(params) {
 	
 	this.url = params.url
 	this.apikey = params.apikey
-	this.timeout = params.timeout || 500
-
-	// This will serve as a delay for the request.
-	// this is done to prevent multiple calls within 
-	// the specified timeout variable
-	var _timeOffIntervall = null;
 
 	/**
 	Makes a request to the provided url.
@@ -35,39 +29,27 @@ function API_Connect(params) {
 	*/
 	this.request = ( (params, callback) => {
 		
-		// This is used because if it was the first request 
-		// it will get set to 0. Otherwise it's the timeout parameter.		
-		var delay = this.timeout;
 
 		var reqUrl = this.url + '?' + $.param(params);
+
+		$.ajax({
+  
+		  url: reqUrl,
+		  method: (params['method'])? params.method : 'GET',
 		
-		if(_timeOffIntervall) {
-			clearTimeout(_timeOffIntervall);
-		} else {
-			delay = 0;
-		}
+		}).done(function(result, status) {
+		  			
+		  	callback(result, status);
 
-		_timeOffIntervall = setTimeout(function() {
-
-			$.ajax({
-	  
-			  url: reqUrl,
-			  method: (params['method'])? params.method : 'GET',
+		}).fail(function(err, status) {
 			
-			}).done(function(result, status) {
-			  			
-			  	callback(result, status);
+			callback(err, status);
+		  	throw err;
+		
+		}).then(function() {
 
-			}).fail(function(err, status) {
-				
-				callback(err, status);
-			  	throw err;
-			
-			});
+		});
 
-			_timeOffIntervall = null
-
-		}, this.timeout);
 
 	});
 }
