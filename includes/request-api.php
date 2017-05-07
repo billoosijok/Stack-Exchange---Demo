@@ -22,7 +22,7 @@
     		$options = [
 		        CURLOPT_URL => $this->url . "?" . $request_parameters,
 		        CURLOPT_RETURNTRANSFER => true,
-            	CURLOPT_TIMEOUT => 0,
+            	CURLOPT_TIMEOUT => 10,
 		        CURLOPT_HEADER => false,
 			] + $curlOptions;
 
