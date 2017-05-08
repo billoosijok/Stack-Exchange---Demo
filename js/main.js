@@ -294,6 +294,7 @@ function init(UI) {
 
 	function setLayoutModeTo(mode) {
 
+		switch (mode) {
 			case 'grid':
 				$('.questions-section').addClass('col s5');
 				break;
